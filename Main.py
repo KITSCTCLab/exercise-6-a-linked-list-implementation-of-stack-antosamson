@@ -28,14 +28,11 @@ class Stack:
     It prints all the elements of stack.
     """
     # Write your code here  
-    if(self.head == None):
-        print('Empty..!')
-    else:
-        temp = self.head   
-        while(temp != None): 
-            print(f'{temp.value}->',end = '')
-            temp = temp.next   
-        print()
+    temp = self.head   
+    if(temp != None): 
+        print(f'{temp.value}->',end = '')
+        temp = temp.next   
+    print()
 
 
 # Do not change the following code
